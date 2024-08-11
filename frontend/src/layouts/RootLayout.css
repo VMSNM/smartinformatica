@@ -1,0 +1,15 @@
+.root-outlet, .footer-outlet {
+    background: transparent;
+    padding: 20px;
+    transition: .7s ease-in-out;
+}
+.root-outlet { margin-left: 44px; min-height: 80vh; }
+.footer-outlet { margin-left: 24px; }
+
+.root-outlet-shrink { margin-left: 160px; }
+.footer-outlet-shrink { margin-left: 140px; }
+
+@media screen and (max-width: 600px) {
+    .root-outlet, .footer-outlet { margin-left: 0px; }
+    .root-outlet-shrink, .footer-outlet-shrink { margin-left: 0px; }
+}

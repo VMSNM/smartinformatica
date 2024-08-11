@@ -1,0 +1,30 @@
+.main-drawer {
+    width: 44px;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    padding-top: 10px;
+    overflow-x: hidden;
+    border-right: 1px solid #999;
+    transition: .7s ease-in-out;
+}
+
+.main-drawer-active {
+    width: 160px;
+}
+
+@media screen and (max-width: 600px) {
+    .main-drawer {
+        width: 0;
+        border-right: none;
+    }
+    .main-drawer-active {
+        position: absolute;
+        width: 160px;
+        top: 0;
+        left: 0;
+        border-right: 1px solid #b9b9b9;
+        z-index: 999;
+    }
+}
