@@ -53,7 +53,7 @@ const OrdersTableData = () => {
           columnVisibilityModel={{id: false, clientID:false}}
           initialState={{
             sorting: {
-              sortModel: [{ field: 'name', sort: 'asc' }],
+              sortModel: [{ field: 'updatedAt', sort: 'asc' }],
             },
             pagination: {
               paginationModel: { page: 0, pageSize: 5 },
