@@ -56,10 +56,10 @@ const OrdersTableData = () => {
               sortModel: [{ field: 'updatedAt', sort: 'asc' }],
             },
             pagination: {
-              paginationModel: { page: 0, pageSize: 5 },
+              paginationModel: { page: 0, pageSize: 10 },
             },
           }}
-          pageSizeOptions={[5, 10]}
+          pageSizeOptions={[5, 10, 25]}
           sx={{fontWeight: '500', '& .MuiDataGrid-cell:hover': {color: 'primary.main'}}}
           onCellClick={handleOnCellClick}
           disableRowSelectionOnClick
